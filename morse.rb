@@ -27,9 +27,15 @@ def decode_word(word)
   decoded_word
 end
 
-# -------------Please write your code below this line -------------
-
-# -------------and above this line. Then delete the comments -------------
+def decode(sentence)
+  words = sentence.strip.tr('/', ' ').split(/   /)
+  message = []
+  words.each do |word|
+      message.push(decode_word(word))
+  end
+  
+  return message.join(" ")
+end
 
 def run_decoder()
   puts 'Enter Morse Code to decode:'
