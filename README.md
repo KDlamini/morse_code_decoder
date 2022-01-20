@@ -11,10 +11,36 @@ This project will decode an entire word in Morse code, takes a string parameter,
 
 - rubocop
 
+## `Getting Started`
+
+To get a local copy of this project:
+
+Clone this repository or download the Zip folder:
+```
+git clone git@github.com:KDlamini/morse_code_decoder.git
+```
+
+To get started, In the root directory run:
+```
+gem install bundler
+```
+Then run:
+```
+bundle install
+```
+run ruby app in the Command Line:
+```
+ruby morse.rb
+```
+
 ## `Tests`
 ### To track linter errors locally follow these steps:  
 
-Track linter errors run:
+Track Ruby linter errors run:
+```
+rubocop
+```
+To auto-correct Rubocop offenses run:
 ```
 rubocop
 ```
