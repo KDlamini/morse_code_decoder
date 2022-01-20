@@ -33,7 +33,7 @@ def decode(sentence)
   words.each do |word|
     message.push(decode_word(word))
   end
-  
+
   message.join(' ')
 end
 
