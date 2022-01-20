@@ -1,3 +1,5 @@
+require_relative 'colors'
+
 def decode_char(character)
     codes = {".-" => "A",
         "-..." => "B",
@@ -54,3 +56,22 @@ def decode_word(word)
 
     return decoded_word;  
 end
+
+# -------------Please write your code below this line -------------
+
+# -------------and above this line. Then delete the comments -------------
+
+def run_decoder()
+    puts "Enter Morse Code to decode:"
+    input = gets.chomp
+
+    print "\n\n                     ...Decoding...".send(:red).send(:bold)
+    sleep 1
+    Gem.win_platform? ? (system "cls") : (system "clear")
+    
+    puts "\n\n\n\n\nYour decoded message is: #{decode(input).send(:green)}"
+    sleep 5
+
+end
+
+run_decoder()
