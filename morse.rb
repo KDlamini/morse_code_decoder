@@ -31,10 +31,10 @@ def decode(sentence)
   words = sentence.strip.tr('/', ' ').split(/   /)
   message = []
   words.each do |word|
-      message.push(decode_word(word))
+    message.push(decode_word(word))
   end
-  
-  return message.join(" ")
+
+  message.join(' ')
 end
 
 def run_decoder()
