@@ -43,3 +43,14 @@ def decode_char(character)
         return "";
     end
 end
+
+def decode_word(word)
+    letters = word.split(/ /)
+    decoded_word = "";
+
+    letters.each do |letter|
+        decoded_word += decode_char(letter)
+    end
+
+    return decoded_word;  
+end
